@@ -1564,7 +1564,7 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
         }
 
         // Video loading
-        const MOTION_DIR = "/";
+        const MOTION_DIR = "/KevinDemola/";
 
         function urlForFile(filename) {
           return MOTION_DIR + filename;
@@ -1577,10 +1577,9 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
         ];
 
         videoMappings.forEach(({ id, file }) => {
-          const videoEl = $(id);
+          const videoEl = document.querySelector(id);
           if (videoEl) {
-            videoEl.src = urlForFile(file);
-            videoEl.setAttribute("aria-label", file);
+            videoEl.src = MOTION_DIR + file;
           }
         });
 
