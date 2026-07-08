@@ -566,101 +566,6 @@
         text-align: justify;
       }
 
-      .digital-media {
-        padding: 4rem 0 6rem;
-        border-bottom: 1px solid rgba(254, 246, 255, 0.1);
-        box-shadow: 0 1px 20px rgba(254, 246, 255, 0.08);
-      }
-
-      .digital-media-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        align-items: start;
-        margin-top: 1.5rem;
-      }
-
-      .digital-media-card {
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        background: rgba(18, 18, 18, 0.8);
-        box-shadow: 0 12px 36px var(--shadow), inset 0 0 20px rgba(254, 246, 255, 0.05);
-        padding: 1.5rem;
-      }
-
-      .digital-media-gallery {
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        background: rgba(18, 18, 18, 0.8);
-        box-shadow: 0 12px 36px var(--shadow), inset 0 0 20px rgba(254, 246, 255, 0.05);
-        padding: 1.5rem;
-      }
-
-      .digital-media-video {
-        max-width: 860px;
-        margin: 0 auto;
-        border-radius: 14px;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        background: var(--bg-soft);
-      }
-
-      .digital-media-video video {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .digital-media-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-        align-items: start;
-        margin-top: 1rem;
-      }
-
-      .digital-media-gallery img {
-        width: 100%;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        display: block;
-        object-fit: cover;
-        height: 220px;
-      }
-
-      .digital-media-copy {
-        margin: 0 0 1rem;
-        color: var(--text-secondary);
-        line-height: 1.75;
-      }
-
-      .digital-media-meta {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--border);
-      }
-
-      .digital-media-meta p {
-        margin: 0.3rem 0;
-        color: var(--text-secondary);
-        line-height: 1.6;
-      }
-
-      .digital-media-bts {
-        margin-top: 1rem;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .digital-media-bts img {
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        display: block;
-      }
-
       /* Motion graphics (automatic reveal on scroll) */
       .motion-wrapper {
         animation: fadeIn 600ms ease-out forwards;
@@ -1383,57 +1288,6 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
         </div>
       </section>
 
-      <section id="digital-media" class="digital-media" aria-label="Digital Media Technologies">
-        <div class="container">
-          <h2 class="section-title">Digital Media Technologies</h2>
-          <p class="motion-intro">
-            This section highlights a short digital media project that combines video storytelling with image-based visual research.
-          </p>
-
-          <div class="digital-media-grid">
-            <div class="digital-media-card reveal">
-              <div class="digital-media-video">
-                <video controls playsinline preload="metadata">
-                  <source src="/KevinDemola/digital media/24_Hours.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <p class="digital-media-copy" style="margin-top: 1rem;">
-                24 HOURS is a short visual film that follows a single day from morning to night through the perspective of a smartphone camera. The project combines live-action footage, stop-motion animation and ambient sound to explore the idea that while time passes quickly, memories remain.
-              </p>
-
-              <div class="digital-media-meta">
-                <p><strong>Duration:</strong> 45 Seconds</p>
-                <p><strong>Genre:</strong> Visual Storytelling</p>
-                <p><strong>Camera:</strong> Sony FX3 &amp; Nothing Phone 3a Pro</p>
-                <p><strong>Software:</strong> Adobe Premiere Pro</p>
-              </div>
-
-              <h4 style="margin-top:1.5rem;">Skills Demonstrated</h4>
-              <p class="digital-media-copy">Cinematography • Video Editing • Storytelling • Sound Design • Stop Motion</p>
-
-              <h4 style="margin-top:1.5rem;">Reflection</h4>
-              <p class="digital-media-copy">This project helped me improve my planning, cinematography, editing and visual storytelling skills by creating a narrative without actors using only visuals, sound and careful editing.</p>
-
-              <div class="digital-media-meta">
-                <p><strong>Hardware:</strong> Sony FX3, Nothing Phone 3a pro</p>
-                <p><strong>Software:</strong> Adobe Premiere Pro</p>
-              </div>
-
-              <div class="digital-media-gallery reveal">
-                <img src="/KevinDemola/digital media/aft_p_1-1.JPG" alt="Digital media visual reference 1" />
-                <img src="/KevinDemola/digital media/mor_p_2-1.JPG" alt="Digital media visual reference 2" />
-              </div>
-              <p class="digital-media-copy" style="margin: 0.75rem 0 0;">Some images taken from FX3.</p>
-
-              <div class="digital-media-bts">
-                <p class="motion-scenes-label">Behind the scenes</p>
-                <img src="/KevinDemola/digital media/bts-1.jpeg" alt="Behind the scenes image for 24 HOURS" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Motion Graphics Section -->
       <section id="motion" class="motion" aria-label="Motion Graphics">
         <div class="container">
@@ -1465,8 +1319,8 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
             <div class="motion-scenes-wrapper">
               <div class="motion-scenes-label">Scenes</div>
               <div class="motion-scenes-gallery">
-                <div class="motion-scene-item"><img src="motion graphics/title-1.png" alt="Title Scene 1"></div>
-                <div class="motion-scene-item"><img src="motion graphics/title-2.png" alt="Title Scene 2"></div>
+                <div class="motion-scene-item"><img src="/KevinDemola/title-1.png" alt="Title Scene 1"></div>
+                <div class="motion-scene-item"><img src="/KevinDemola/title-2.png" alt="Title Scene 2"></div>
               </div>
             </div>
           </article>
@@ -1495,8 +1349,8 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
               
               <div class="motion-scenes-label">Scenes</div>
               <div class="motion-scenes-gallery">
-                <div class="motion-scene-item"><img src="motion graphics/lyric-1.png" alt="Lyric Scene 1"></div>
-                <div class="motion-scene-item"><img src="motion graphics/lyric-2.png" alt="Lyric Scene 2"></div>
+                <div class="motion-scene-item"><img src="/KevinDemola/lyric-1.png" alt="Lyric Scene 1"></div>
+                <div class="motion-scene-item"><img src="/KevinDemola/lyric-2.png" alt="Lyric Scene 2"></div>
               </div>
             </article>
 
@@ -1522,8 +1376,8 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
               
               <div class="motion-scenes-label">Scenes</div>
               <div class="motion-scenes-gallery">
-                <div class="motion-scene-item"><img src="motion graphics/charity-1.png" alt="Charity Scene 1"></div>
-                <div class="motion-scene-item"><img src="motion graphics/charity-2.png" alt="Charity Scene 2"></div>
+                <div class="motion-scene-item"><img src="/KevinDemola/charity-1.png" alt="Charity Scene 1"></div>
+                <div class="motion-scene-item"><img src="/KevinDemola/charity-2.png" alt="Charity Scene 2"></div>
               </div>
             </article>
           </div>
@@ -1534,6 +1388,7 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
     <footer class="site-footer" role="contentinfo">
       <div class="footer-inner">
         <div class="footer-contact">
+          <a class="footer-link" href="tel:+447901033137">Mobile: +447901033137</a>
           <a class="footer-link" href="mailto:kevindemola27@gmail.com">Email: kevindemola27@gmail.com</a>
         </div>
         <div class="footer-year">© <span id="year"></span> Kevin Demola</div>
@@ -1709,23 +1564,22 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
         }
 
         // Video loading
-        const MOTION_DIR = "./" + encodeURIComponent("motion graphics") + "/";
+        const MOTION_DIR = "/KevinDemola/";
 
         function urlForFile(filename) {
-          return MOTION_DIR + encodeURIComponent(filename);
+          return MOTION_DIR + filename;
         }
 
         const videoMappings = [
           { id: "#video-lyric", file: "lyric-vid.mp4" },
-          { id: "#video-title", file: "title sequence.mp4" },
-          { id: "#video-charity", file: "WWF.mp4" },
+          { id: "#video-title", file: "title-sequence.mp4" },
+          { id: "#video-charity", file: "wwf.mp4" },
         ];
 
         videoMappings.forEach(({ id, file }) => {
-          const videoEl = $(id);
+          const videoEl = document.querySelector(id);
           if (videoEl) {
-            videoEl.src = urlForFile(file);
-            videoEl.setAttribute("aria-label", file);
+            videoEl.src = MOTION_DIR + file;
           }
         });
 
@@ -1770,4 +1624,3 @@ Right now, I’m learning more about AI tools and improving my skills, and I’m
     </script>
   </body>
 </html>
-
