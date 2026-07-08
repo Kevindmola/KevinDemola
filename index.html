@@ -566,6 +566,101 @@
         text-align: justify;
       }
 
+      .digital-media {
+        padding: 4rem 0 6rem;
+        border-bottom: 1px solid rgba(254, 246, 255, 0.1);
+        box-shadow: 0 1px 20px rgba(254, 246, 255, 0.08);
+      }
+
+      .digital-media-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: start;
+        margin-top: 1.5rem;
+      }
+
+      .digital-media-card {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: rgba(18, 18, 18, 0.8);
+        box-shadow: 0 12px 36px var(--shadow), inset 0 0 20px rgba(254, 246, 255, 0.05);
+        padding: 1.5rem;
+      }
+
+      .digital-media-gallery {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: rgba(18, 18, 18, 0.8);
+        box-shadow: 0 12px 36px var(--shadow), inset 0 0 20px rgba(254, 246, 255, 0.05);
+        padding: 1.5rem;
+      }
+
+      .digital-media-video {
+        max-width: 860px;
+        margin: 0 auto;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-soft);
+      }
+
+      .digital-media-video video {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .digital-media-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        align-items: start;
+        margin-top: 1rem;
+      }
+
+      .digital-media-gallery img {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        display: block;
+        object-fit: cover;
+        height: 220px;
+      }
+
+      .digital-media-copy {
+        margin: 0 0 1rem;
+        color: var(--text-secondary);
+        line-height: 1.75;
+      }
+
+      .digital-media-meta {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .digital-media-meta p {
+        margin: 0.3rem 0;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .digital-media-bts {
+        margin-top: 1rem;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .digital-media-bts img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        display: block;
+      }
+
       /* Motion graphics (automatic reveal on scroll) */
       .motion-wrapper {
         animation: fadeIn 600ms ease-out forwards;
@@ -1284,6 +1379,44 @@ I like working with both design and technology to create things that are easy to
 
 Right now, I’m learning more about AI tools and improving my skills, and I’m looking for opportunities to gain real experience through projects, remote work, or part-time roles.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="digital-media" class="digital-media" aria-label="Digital Media Technologies">
+        <div class="container">
+          <h2 class="section-title">Digital Media Technologies</h2>
+          <p class="motion-intro">
+            This section highlights a short digital media project that combines video storytelling with image-based visual research.
+          </p>
+
+          <div class="digital-media-grid">
+            <div class="digital-media-card reveal">
+              <div class="digital-media-video">
+                <video controls playsinline preload="metadata">
+                  <source src="/KevinDemola/24_Hours.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <p class="digital-media-copy" style="margin-top: 1rem;">
+                24 HOURS is a short visual film that follows a single day from morning to night through the perspective of a smartphone camera. The project combines live-action footage, stop-motion animation and ambient sound to explore the idea that while time passes quickly, memories remain.
+              </p>
+
+              <div class="digital-media-meta">
+                <p><strong>Hardware:</strong> Sony FX3, Nothing Phone 3a pro</p>
+                <p><strong>Software:</strong> Adobe Premiere Pro</p>
+              </div>
+
+              <div class="digital-media-gallery reveal">
+                <img src="/KevinDemola/aft_p_1-1.JPG" alt="Digital media visual reference 1" />
+                <img src="/KevinDemola/mor_p_2-1.JPG" alt="Digital media visual reference 2" />
+              </div>
+              <p class="digital-media-copy" style="margin: 0.75rem 0 0;">Some images taken from FX3.</p>
+
+              <div class="digital-media-bts">
+                <p class="motion-scenes-label">Behind the scenes</p>
+                <img src="/KevinDemola/bts-1.jpeg" alt="Behind the scenes image for 24 HOURS" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
